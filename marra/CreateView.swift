@@ -6,8 +6,13 @@
 //
 
 import SwiftUI
+import Introspect
 
 struct CreateView: View {
+    let columns = [GridItem(.flexible()), GridItem(.flexible())]
+    
+    @State var uiTabarController: UITabBarController?
+    
     @State private var isShowingPhotoPicker = false
     @State private var actionState: Int? = 0
     
@@ -65,11 +70,14 @@ struct CreateView: View {
                     .frame(width: 250, height: 50)
                     .padding()
                 interestBar
-                VStack {
+                LazyVGrid(columns: columns) {
                     ForEach(interests, id: \.self) {interest in
                         Text(interest)
                             .font(.title2)
-                            .foregroundColor(Color("Secondary"))
+                            .padding()
+                            .foregroundColor(Color("Cloud"))
+                            .background(Color("Primary"))
+                            .cornerRadius(12)
                             .bold()
                             .padding(8)
                     }
@@ -96,6 +104,12 @@ struct CreateView: View {
                     .foregroundColor(Color("Secondary"))
                 }
             }
+        }
+        .introspectTabBarController { (UITabBarController) in
+            UITabBarController.tabBar.isHidden = true
+            uiTabarController = UITabBarController
+        }.onDisappear{
+            uiTabarController?.tabBar.isHidden = false
         }
     }
     

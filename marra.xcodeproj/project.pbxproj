@@ -25,6 +25,7 @@
 		400190842884F96300F771AD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190832884F96300F771AD /* DetailView.swift */; };
 		400190862884F96B00F771AD /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190852884F96B00F771AD /* CreateView.swift */; };
 		400190882884FA3100F771AD /* PersonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190872884FA3100F771AD /* PersonalView.swift */; };
+		4071487D28878A05000DE377 /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4071487C28878A05000DE377 /* EditButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		400190832884F96300F771AD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		400190852884F96B00F771AD /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		400190872884FA3100F771AD /* PersonalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalView.swift; sourceTree = "<group>"; };
+		4071487C28878A05000DE377 /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				4001906D2884F8DB00F771AD /* CardView.swift */,
 				4001906F2884F8E300F771AD /* BackButton.swift */,
+				4071487C28878A05000DE377 /* EditButton.swift */,
 				400190712884F8EA00F771AD /* InterestElement.swift */,
 				400190732884F8F200F771AD /* OpenStatus.swift */,
 				400190752884F8FA00F771AD /* OccStatus.swift */,
@@ -213,6 +216,7 @@
 				4001907C2884F91600F771AD /* ImagePicker.swift in Sources */,
 				400190802884F95500F771AD /* SettingsView.swift in Sources */,
 				400190882884FA3100F771AD /* PersonalView.swift in Sources */,
+				4071487D28878A05000DE377 /* EditButton.swift in Sources */,
 				4001907A2884F90F00F771AD /* Data.swift in Sources */,
 				400190582884F7C900F771AD /* marraApp.swift in Sources */,
 			);

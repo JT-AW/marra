@@ -17,7 +17,7 @@ struct Person: Identifiable {
     var gradient: LinearGradient
 }
 
-var profile = Person(name: "d", contact: "d", image: Image(""), interests: [], stats: true, gradient: gradients[Int.random(in: 0...gradients.count)])
+var profile = Person(name: "Will", contact: "willr", image: Image("Profile1"), interests: ["water", "gliding", "space", "God"], stats: true, gradient: gradients[Int.random(in: 0...gradients.count)])
 
 var people = [
     Person(name: "John", contact: "", image: Image("Profile1"), interests: [
