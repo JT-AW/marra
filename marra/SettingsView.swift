@@ -32,21 +32,20 @@ struct SettingsView: View {
                         OpenStatus()
                             .onTapGesture{
                                 syncTask()
-                                NavigationLink(destination: SettingsView(), label: ())
                             }
                     } else {
                         OccStatus()
                             .onTapGesture{
                                 syncTask()
-                                NavigationLink(destination: SettingsView(), label: ())
                             }
                     }
                 }
             }
         }
-        func syncTask() {
-            self.state.toggle()
-        }
+    }
+    
+    func syncTask() {
+        self.state.toggle()
     }
 }
 

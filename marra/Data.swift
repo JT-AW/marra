@@ -17,11 +17,11 @@ struct Person: Identifiable {
     var gradient: LinearGradient
 }
 
-var profile = Person(name: "Will", contact: "willr", image: Image("Profile1"), interests: ["water", "gliding", "space", "God"], stats: true, gradient: gradients[Int.random(in: 0...gradients.count)])
+var profile = Person(name: "John", contact: "j.z.w_", image: Image("Profile1"), interests: ["water", "gliding", "space", "reading"], stats: true, gradient: gradients[Int.random(in: 0...gradients.count)])
 
 var people = [
-    Person(name: "John", contact: "", image: Image("Profile1"), interests: [
+    Person(name: "Jack", contact: "", image: Image("Profile2"), interests: [
         "eating", "hiking"], stats: false, gradient: gradients[Int.random(in: 0...gradients.count)]),
-    Person(name: "Zachariah", contact: "", image: Image("Profile2"), interests: [
-        "sports", "drivingsdfesdfesdfesd", "watersports", "flying"], stats: true, gradient: gradients[Int.random(in: 0...gradients.count)])
+    Person(name: "Zachariah", contact: "", image: Image("Profile3"), interests: [
+        "sports", "driving", "watersports", "flying"], stats: true, gradient: gradients[Int.random(in: 0...gradients.count)])
 ]
